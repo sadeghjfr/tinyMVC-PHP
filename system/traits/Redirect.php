@@ -1,6 +1,6 @@
 <?php
 
-namespace system\traits;
+namespace System\Traits;
 
 trait Redirect{
 

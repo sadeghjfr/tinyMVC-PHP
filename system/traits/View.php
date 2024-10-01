@@ -1,5 +1,5 @@
 <?php
-namespace system\traits;
+namespace System\Traits;
 
 trait View{
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace system\router;
+namespace System\Router;
 use ReflectionException;
 use ReflectionMethod;
 
@@ -30,7 +30,7 @@ class Routing{
         require_once ($path);
         sizeof($this->currentRoute) == 1 ? $method = 'index' : $method = $this->currentRoute[1];
 
-        $class = "application\controller\\" . $this->currentRoute[0];
+        $class = "Application\Controller\\" . $this->currentRoute[0];
         $object = new $class;
 
         if (method_exists($object, $method)){
