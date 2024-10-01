@@ -20,4 +20,15 @@ trait View{
 
     }
 
+    // css, js, images
+    protected function asset($src){
+        return trim(BASE_URL,"/") ."/" . 'public/' . trim($src,"/");
+    }
+
+    // links
+    protected function url($url){
+        return trim(BASE_URL, "/") ."/" . trim($url,"/");
+    }
+
+
 }
